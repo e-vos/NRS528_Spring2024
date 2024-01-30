@@ -9,4 +9,4 @@ I began this README file with a quote from Leonidas Hubbard's book, "[The Lure o
 
 The technologies available to us, like GIS and high resolution sensors, are relatively recent inventions. For those of us studying these things in school, we are fortunate to be at their forefront. In a sense, they have allowed us to explore the world from our desks. The explorers of the past required fortitude and determination that is almost impossible for me to imagine. I can only guess that the circumstances they eventually found themselves in overwhelmed any doubts they may have had. In a way, I envy them.
 
-Here we are in the 21st century. Applying Python in GIS is a new frontier for me, despite its vastness cannot compare to the hardy scientists of yesteryear. At least if I make mistakes I can simply begin again.
+Here we are in the 21st century. Applying Python in GIS is a new frontier for me, despite its vastness not comparing to the hardy scientists of yesteryear. At least if I make mistakes I can simply begin again.
