@@ -12,12 +12,12 @@ import os
 
 # # Task - Use os.system to make a directory in your current directory, check if it is created
 # # delete it and check again.
-
-os.system("dir")
-os.mkdir("Test")
-#os.system("dir")
-os.rmdir("Test")
-os.system("dir")
+#
+# os.system("dir")
+# os.mkdir("Test")
+# #os.system("dir")
+# os.rmdir("Test")
+# os.system("dir")
 
 # # Part b - Other interesting functions you can use within Python
 # path = "test_dir"
@@ -43,3 +43,19 @@ os.system("dir")
 #
 # # Bonus Task 2 - Use os to make a directory in your root directory, add a subdirectory inside it, check if it is created,
 # # delete the subdirectory and the main directory. Check if the main directory exists, print "name dir EXISTS" or "name dir NOT EXISTS"
+
+# file_path = r"C:\folder"
+# os.mkdir(file_path)
+# file_path2 = r"C:\folder\inside"
+# os.mkdir(file_path2)
+# list = os.listdir(file_path)
+#
+# for folder_name in list:
+#     if folder_name == "inside":
+#         print("exists")
+#     else:
+#         print("panic")
+
+file_path = r"C:\folder"
+os.makedirs(f"{file_path}\\inside", exist_ok=True)                  # Use f to insert a literal expression, r when you create a raw string
+print("exists" if "inside" in os.listdir(file_path) else "panic")
