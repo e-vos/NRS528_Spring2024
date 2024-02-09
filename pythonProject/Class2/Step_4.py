@@ -29,32 +29,33 @@
 
 # If/else/elif
 
-# You can use if/else/elif to make decisions based on your data:
-my_var = int(input("Enter a number: "))
-if my_var > 6:
-    print('Greater than 6')
-elif my_var == 5:
-    print('Equal to 5')
-else:
-    print('Less than 5')
+# # You can use if/else/elif to make decisions based on your data:
+# my_var = int(input("Enter a number: "))
+# if my_var > 6:
+#     print('Greater than 6')
+# elif my_var == 5:
+#     print('Equal to 5')
+# else:
+#     print('You entered ' + str(my_var))
+#     exit(0)
 #
 # # Using if to catch cases as we loop:
-# my_if_list = [1, 2, 3, 4, 5, 6]
+# my_if_list = [0, 1, 2, 3, 4, 5, 6]                                  # 0 % 2
 # for i in my_if_list:
 #     if i % 2 == 0:
 #         print(str(i) + ' is even because we can divide it by two')
 #     else:
 #         print(str(i) + ' is odd because it will not divide by two')
 #
-#
-# # While
-#
-# # We can use while to perform some task
-# i = 0
-# while i < 10:
-#     i = i+1
-#     print(i)
-#
+
+# While
+
+# We can use while to perform some task
+i = 0
+while i < 10:
+    i = i+1
+    print(i)
+
 # # Be careful though not to enter an infinite loop as you forgot your increment
 # i = 0
 # while i < 10:
