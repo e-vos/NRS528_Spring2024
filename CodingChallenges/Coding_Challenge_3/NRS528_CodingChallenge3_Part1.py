@@ -50,4 +50,3 @@ for i in sorted_dir_list:									# Now it's time to burn the bridges.
 												# so this might be bad in in a real-world scenario. I could have typed os.rmdir over
 												# and over, but I wanted to see if there was a cooler way to do it. Also, that would
 												# have been really annoying to type out over and over again.
-S
