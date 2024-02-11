@@ -13,7 +13,7 @@ import os		# I learned about the rmtrees function within the 'shutil' module
 import shutil		# and decided to try using it, as the challenge prompt said nothing
 			# about only being able to use 'os' in our deletions.
 
-file_path = r"C:\CodingChallenge3")	# Set the file path. I found that CodingChallenge3 is created
+file_path = r"C:\CodingChallenge3"	# Set the file path. I found that CodingChallenge3 is created
 					# in the first for loop, so I didn't have to write mkdirs twice.
 					# The way the code works means you don't need CodingChallenge3
 					# to hold everything, because it won't delete the primary
