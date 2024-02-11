@@ -39,5 +39,3 @@ averagesDict = {}					# Create a blank dictionary where I'll store unique years
 							# (from srt_years) and the respective ppm annual averages
 
 for year in srt_years:
-	
-	
