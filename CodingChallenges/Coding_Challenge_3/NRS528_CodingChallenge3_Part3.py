@@ -13,6 +13,7 @@ import csv
 
 years = []		# Create a list to store YYYY from the date column
 annuals_dict = {}	# Dictionary for use later on...
+ppm_values = []		# For the second task
 
 # Find unique YYYY values, to iterate through the ppm values
 
@@ -53,4 +54,30 @@ for year in years_set:
 				annuals_dict[year] = annual_avg				# Associate the average with the year, in the
 											# dictionary (e.g. 1959 | 300).
 
-# print(annuals_dict)				
+# print(annuals_dict)
+
+# Find the minimum, maximum, and average values for the entire dataset
+
+with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChallenges\Coding_Challenge_3\co2-ppm-daily.csv") as co2:
+
+	summed_values = float(0)
+	count_values = 0
+
+	next(co2)
+
+	for row in csv.reader(co2):
+
+		ppm = row[1]
+		ppm_values.append(ppm)
+		summed_values += float(ppm)
+		count_values += 1
+
+	srt_ppm_values = sorted(ppm_values)
+
+	min_ppm = srt_ppm_values[0]
+	max_ppm = srt_ppm_values[-1]
+	avg_ppm = summed_values/count_values
+
+# print(min_ppm)
+# print(max_ppm)
+# print(avg_ppm)
