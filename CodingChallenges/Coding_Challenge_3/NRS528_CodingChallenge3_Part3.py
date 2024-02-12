@@ -60,7 +60,7 @@ for year in years_set:
 
 with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChallenges\Coding_Challenge_3\co2-ppm-daily.csv") as co2:
 
-	summed_values = float(0)
+	summed_values = float(0)	# Same as in Task 1
 	count_values = 0
 
 	next(co2)
@@ -72,12 +72,20 @@ with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChal
 		summed_values += float(ppm)
 		count_values += 1
 
-	srt_ppm_values = sorted(ppm_values)
+	srt_ppm_values = sorted(ppm_values)		# Need to sort these for the next steps
 
-	min_ppm = srt_ppm_values[0]
-	max_ppm = srt_ppm_values[-1]
+	min_ppm = srt_ppm_values[0]			# Since ppm values are sorted numerically, 1st item = minimum
+	max_ppm = srt_ppm_values[-1]			# and last item = maximum.
 	avg_ppm = summed_values/count_values
 
 # print(min_ppm)
 # print(max_ppm)
 # print(avg_ppm)
+
+# Seasonal average in Spring, Summer, Fall, and Winter
+
+spring_months = ["03", "04", "05"]	# Use the MM format for months
+summer_months = ["06", "07", "08"]
+fall_months = ["09", "10", "11"]
+winter_months = ["12", "01", "02"]
+
