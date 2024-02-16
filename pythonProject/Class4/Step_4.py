@@ -26,14 +26,14 @@
 import arcpy
 
 # Print the passed-down current workspace environment setting
-arcpy.AddMessage("The passed-down current workspace is: %s" % arcpy.env.workspace)
-arcpy.AddMessage("The passed-down scratch workspace is: %s" % arcpy.env.scratchWorkspace)
-
-# Set a new workspace, overriding the passed-down workspace
-arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy"
-arcpy.env.scratchWorkspace = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy"
-arcpy.AddMessage("The new current workspace is: %s" % arcpy.env.workspace)
-arcpy.AddMessage("The new scratch workspace is: %s" % arcpy.env.scratchWorkspace)
+# arcpy.AddMessage("The passed-down current workspace is: %s" % arcpy.env.workspace)
+# arcpy.AddMessage("The passed-down scratch workspace is: %s" % arcpy.env.scratchWorkspace)
+#
+# # Set a new workspace, overriding the passed-down workspace
+# arcpy.env.workspace = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy"
+# arcpy.env.scratchWorkspace = r"C:\Data\Course_ArcGIS_Python\Classes\04_arcpy"
+# arcpy.AddMessage("The new current workspace is: %s" % arcpy.env.workspace)
+# arcpy.AddMessage("The new scratch workspace is: %s" % arcpy.env.scratchWorkspace)
 
 
 # Task 1 - Set the geoprocessing environment extent to, hint: find the command needed at this link:
@@ -44,11 +44,14 @@ arcpy.AddMessage("The new scratch workspace is: %s" % arcpy.env.scratchWorkspace
 # Right - 320778.363053
 # BTW, we are using the spatial reference: NAD_1983_Rhode_Island_ft for this exercise
 
+arcpy.env.extent = arcpy.Extent(320172.363053, 147554.685356, 320778.363053, 147999.685356)
+arcpy.env.workspace = r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\pythonProject\Class4\Step_4_data"
+arcpy.env.overwriteoutput = True
 
 # Task 2 - With the environment set undertake a simple processing operation on the data provided
 # in Step_4_data.zip by editing the code:
-# input_raster = r""
-# output_workspace = ""
-# raster_format = "TIFF"
-# arcpy.RasterToOtherFormat_conversion(input_raster, output_workspace, raster_format)
+input_raster = r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\pythonProject\Class4\Step_4_data\0320001450.JP2"
+output_workspace = arcpy.env.workspace
+raster_format = "TIFF"
+arcpy.RasterToOtherFormat_conversion(input_raster, output_workspace, raster_format)
 

@@ -1,0 +1,309 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="Clayers">12</MDI>
+    <MDI key="Clevels">5</MDI>
+    <MDI key="Corder">PCRL</MDI>
+    <MDI key="Creversible">false</MDI>
+    <MDI key="Cuse_eph">false</MDI>
+    <MDI key="Cuse_sop">false</MDI>
+    <MDI key="DataType">Generic</MDI>
+  </Metadata>
+  <Metadata domain="IMAGE_STRUCTURE">
+    <MDI key="Corder">PCRL</MDI>
+  </Metadata>
+  <Metadata domain="xml:gml.root-instance" format="xml">
+    <gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/profiles/gmlJP2Profile/1.0.0/gmlJP2Profile.xsd">
+      <gml:boundedBy>
+        <gml:Envelope srsName="gmljp2://xml/CRSDictionary.gml#ogrcrs1">
+          <gml:lowerCorner>320172 147554</gml:lowerCorner>
+          <gml:upperCorner>320779 148000</gml:upperCorner>
+        </gml:Envelope>
+      </gml:boundedBy>
+      <gml:featureMember>
+        <gml:FeatureCollection>
+          <gml:featureMember>
+            <gml:RectifiedGridCoverage dimension="2" gml:id="RGC0001">
+              <gml:rectifiedGridDomain>
+                <gml:RectifiedGrid dimension="2">
+                  <gml:limits>
+                    <gml:GridEnvelope>
+                      <gml:low>0 0</gml:low>
+                      <gml:high>606 445</gml:high>
+                    </gml:GridEnvelope>
+                  </gml:limits>
+                  <gml:axisName>x</gml:axisName>
+                  <gml:axisName>y</gml:axisName>
+                  <gml:origin>
+                    <gml:Point gml:id="P0001" srsName="gmljp2://xml/CRSDictionary.gml#ogrcrs1">
+                      <gml:pos>320172.5 147999.5</gml:pos>
+                    </gml:Point>
+                  </gml:origin>
+                  <gml:offsetVector srsName="gmljp2://xml/CRSDictionary.gml#ogrcrs1">1 0</gml:offsetVector>
+                  <gml:offsetVector srsName="gmljp2://xml/CRSDictionary.gml#ogrcrs1">0 -1</gml:offsetVector>
+                </gml:RectifiedGrid>
+              </gml:rectifiedGridDomain>
+              <gml:rangeSet>
+                <gml:File>
+                  <gml:rangeParameters />
+                  <gml:fileName>gmljp2://codestream/0</gml:fileName>
+                  <gml:fileStructure>Record Interleaved</gml:fileStructure>
+                </gml:File>
+              </gml:rangeSet>
+            </gml:RectifiedGridCoverage>
+          </gml:featureMember>
+        </gml:FeatureCollection>
+      </gml:featureMember>
+    </gml:FeatureCollection>
+  </Metadata>
+  <Metadata domain="xml:CRSDictionary.gml" format="xml">
+    <gml:Dictionary gml:id="CRSU1" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd">
+      <gml:description>Dictionary for custom SRS PROJCS["NAD83_Rhode_Island_ft",GEOGCS["NAD83",DATUM["D_NORTH_AMERICAN_1983",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6269"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["Degree",0.0174532925199433,AUTHORITY["EPSG","9102"]],AUTHORITY["EPSG","4269"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",41.0833333333333],PARAMETER["central_meridian",-71.5],PARAMETER["scale_factor",0.99999375],PARAMETER["false_easting",328083.333333333],PARAMETER["false_northing",0],UNIT["US survey foot",0.304800609601219,AUTHORITY["EPSG","9003"]],AXIS["Easting",EAST],AXIS["Northing",NORTH]]</gml:description>
+      <gml:name>Dictionary for custom SRS</gml:name>
+      <gml:dictionaryEntry>
+        <gml:ProjectedCRS gml:id="ogrcrs1">
+          <gml:srsName>NAD83_Rhode_Island_ft</gml:srsName>
+          <gml:baseCRS>
+            <gml:GeographicCRS gml:id="ogrcrs2">
+              <gml:srsName>NAD83</gml:srsName>
+              <gml:srsID>
+                <gml:name codeSpace="urn:ogc:def:crs:EPSG::">4269</gml:name>
+              </gml:srsID>
+              <gml:usesEllipsoidalCS>
+                <gml:EllipsoidalCS gml:id="ogrcrs3">
+                  <gml:csName>ellipsoidal</gml:csName>
+                  <gml:csID>
+                    <gml:name codeSpace="urn:ogc:def:cs:EPSG::">6402</gml:name>
+                  </gml:csID>
+                  <gml:usesAxis>
+                    <gml:CoordinateSystemAxis gml:id="ogrcrs4" gml:uom="urn:ogc:def:uom:EPSG::9102">
+                      <gml:name>Geodetic latitude</gml:name>
+                      <gml:axisID>
+                        <gml:name codeSpace="urn:ogc:def:axis:EPSG::">9901</gml:name>
+                      </gml:axisID>
+                      <gml:axisAbbrev>Lat</gml:axisAbbrev>
+                      <gml:axisDirection>north</gml:axisDirection>
+                    </gml:CoordinateSystemAxis>
+                  </gml:usesAxis>
+                  <gml:usesAxis>
+                    <gml:CoordinateSystemAxis gml:id="ogrcrs5" gml:uom="urn:ogc:def:uom:EPSG::9102">
+                      <gml:name>Geodetic longitude</gml:name>
+                      <gml:axisID>
+                        <gml:name codeSpace="urn:ogc:def:axis:EPSG::">9902</gml:name>
+                      </gml:axisID>
+                      <gml:axisAbbrev>Lon</gml:axisAbbrev>
+                      <gml:axisDirection>east</gml:axisDirection>
+                    </gml:CoordinateSystemAxis>
+                  </gml:usesAxis>
+                </gml:EllipsoidalCS>
+              </gml:usesEllipsoidalCS>
+              <gml:usesGeodeticDatum>
+                <gml:GeodeticDatum gml:id="ogrcrs6">
+                  <gml:datumName>D_NORTH_AMERICAN_1983</gml:datumName>
+                  <gml:datumID>
+                    <gml:name codeSpace="urn:ogc:def:datum:EPSG::">6269</gml:name>
+                  </gml:datumID>
+                  <gml:usesPrimeMeridian>
+                    <gml:PrimeMeridian gml:id="ogrcrs7">
+                      <gml:meridianName>Greenwich</gml:meridianName>
+                      <gml:meridianID>
+                        <gml:name codeSpace="urn:ogc:def:meridian:EPSG::">8901</gml:name>
+                      </gml:meridianID>
+                      <gml:greenwichLongitude>
+                        <gml:angle uom="urn:ogc:def:uom:EPSG::9102">0</gml:angle>
+                      </gml:greenwichLongitude>
+                    </gml:PrimeMeridian>
+                  </gml:usesPrimeMeridian>
+                  <gml:usesEllipsoid>
+                    <gml:Ellipsoid gml:id="ogrcrs8">
+                      <gml:ellipsoidName>GRS 1980</gml:ellipsoidName>
+                      <gml:ellipsoidID>
+                        <gml:name codeSpace="urn:ogc:def:ellipsoid:EPSG::">7019</gml:name>
+                      </gml:ellipsoidID>
+                      <gml:semiMajorAxis uom="urn:ogc:def:uom:EPSG::9001">6378137</gml:semiMajorAxis>
+                      <gml:secondDefiningParameter>
+                        <gml:inverseFlattening uom="urn:ogc:def:uom:EPSG::9201">298.257222101</gml:inverseFlattening>
+                      </gml:secondDefiningParameter>
+                    </gml:Ellipsoid>
+                  </gml:usesEllipsoid>
+                </gml:GeodeticDatum>
+              </gml:usesGeodeticDatum>
+            </gml:GeographicCRS>
+          </gml:baseCRS>
+          <gml:definedByConversion>
+            <gml:Conversion gml:id="ogrcrs9">
+              <gml:coordinateOperationName>Transverse_Mercator</gml:coordinateOperationName>
+              <gml:usesMethod xlink:href="urn:ogc:def:method:EPSG::9807" />
+              <gml:usesValue>
+                <gml:value uom="urn:ogc:def:uom:EPSG::9102">41.0833333333333</gml:value>
+                <gml:valueOfParameter xlink:href="urn:ogc:def:parameter:EPSG::8801" />
+              </gml:usesValue>
+              <gml:usesValue>
+                <gml:value uom="urn:ogc:def:uom:EPSG::9102">-71.5</gml:value>
+                <gml:valueOfParameter xlink:href="urn:ogc:def:parameter:EPSG::8802" />
+              </gml:usesValue>
+              <gml:usesValue>
+                <gml:value uom="urn:ogc:def:uom:EPSG::9001">0.99999375</gml:value>
+                <gml:valueOfParameter xlink:href="urn:ogc:def:parameter:EPSG::8805" />
+              </gml:usesValue>
+              <gml:usesValue>
+                <gml:value uom="urn:ogc:def:uom:EPSG::9001">99999.99999999991</gml:value>
+                <gml:valueOfParameter xlink:href="urn:ogc:def:parameter:EPSG::8806" />
+              </gml:usesValue>
+              <gml:usesValue>
+                <gml:value uom="urn:ogc:def:uom:EPSG::9001">0</gml:value>
+                <gml:valueOfParameter xlink:href="urn:ogc:def:parameter:EPSG::8807" />
+              </gml:usesValue>
+            </gml:Conversion>
+          </gml:definedByConversion>
+          <gml:usesCartesianCS>
+            <gml:CartesianCS gml:id="ogrcrs10">
+              <gml:csName>Cartesian</gml:csName>
+              <gml:csID>
+                <gml:name codeSpace="urn:ogc:def:cs:EPSG::">4400</gml:name>
+              </gml:csID>
+              <gml:usesAxis>
+                <gml:CoordinateSystemAxis gml:id="ogrcrs11" gml:uom="urn:ogc:def:uom:EPSG::9001">
+                  <gml:name>Easting</gml:name>
+                  <gml:axisID>
+                    <gml:name codeSpace="urn:ogc:def:axis:EPSG::">9906</gml:name>
+                  </gml:axisID>
+                  <gml:axisAbbrev>E</gml:axisAbbrev>
+                  <gml:axisDirection>east</gml:axisDirection>
+                </gml:CoordinateSystemAxis>
+              </gml:usesAxis>
+              <gml:usesAxis>
+                <gml:CoordinateSystemAxis gml:id="ogrcrs12" gml:uom="urn:ogc:def:uom:EPSG::9001">
+                  <gml:name>Northing</gml:name>
+                  <gml:axisID>
+                    <gml:name codeSpace="urn:ogc:def:axis:EPSG::">9907</gml:name>
+                  </gml:axisID>
+                  <gml:axisAbbrev>N</gml:axisAbbrev>
+                  <gml:axisDirection>north</gml:axisDirection>
+                </gml:CoordinateSystemAxis>
+              </gml:usesAxis>
+            </gml:CartesianCS>
+          </gml:usesCartesianCS>
+        </gml:ProjectedCRS>
+      </gml:dictionaryEntry>
+    </gml:Dictionary>
+  </Metadata>
+  <Metadata domain="Esri">
+    <MDI key="PyramidResamplingType">NEAREST</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <NoDataValue>2.56000000000000E+02</NoDataValue>
+    <Histograms>
+      <HistItem>
+        <HistMin>-0.5</HistMin>
+        <HistMax>255.5</HistMax>
+        <BucketCount>256</BucketCount>
+        <IncludeOutOfRange>1</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>111|35|19|29|50|41|57|59|59|68|79|108|107|147|183|235|357|527|867|1196|1607|1804|1746|1997|2255|2601|3088|3600|3880|4178|3427|2826|2359|1996|1772|1668|1574|1516|1341|1192|1097|992|1023|979|894|893|931|919|921|840|790|720|647|647|593|648|619|590|613|618|593|603|574|537|478|508|480|461|505|474|516|497|510|574|602|664|685|722|727|771|651|695|727|628|665|625|608|609|525|606|568|536|473|520|502|494|547|568|518|612|533|568|575|639|643|679|711|753|759|739|733|763|818|804|819|895|786|855|889|920|957|915|955|993|973|975|1037|976|1113|1077|1093|1105|1162|1117|1089|1120|1143|1108|1150|1155|1141|1146|1087|1095|1101|1009|1093|1048|1040|1073|1004|977|962|895|906|924|983|979|962|984|968|977|941|1005|931|921|969|989|952|906|896|866|841|787|813|763|759|727|761|737|737|731|739|767|769|767|810|831|841|871|938|913|953|991|1009|1000|1021|1122|1089|1165|1126|1226|1276|1427|1416|1474|1503|1553|1558|1528|1570|1603|1614|1570|1594|1549|1496|1402|1390|1265|1143|1180|1089|1079|1119|1135|1207|1254|1254|1385|1662|1841|2027|2462|3811|9119|11690|2848|1751|1328|1010|848|704|620|552|526|487|434|401|396|377|386|339|290|373|1486</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JP2000</MDI>
+    </Metadata>
+    <Metadata>
+      <MDI key="SourceBandIndex">0</MDI>
+      <MDI key="STATISTICS_COUNT">270722.000000</MDI>
+      <MDI key="STATISTICS_COVARIANCES">6002.581766202404,5304.993969527149,4347.425481081978,3655.913850908904</MDI>
+      <MDI key="STATISTICS_EXCLUDEDVALUES"></MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">140.24557664319</MDI>
+      <MDI key="STATISTICS_MEDIAN">148.000000</MDI>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_SKIPFACTORX">1</MDI>
+      <MDI key="STATISTICS_SKIPFACTORY">1</MDI>
+      <MDI key="STATISTICS_STDDEV">77.476330360972</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="2">
+    <NoDataValue>2.56000000000000E+02</NoDataValue>
+    <Histograms>
+      <HistItem>
+        <HistMin>-0.5</HistMin>
+        <HistMax>255.5</HistMax>
+        <BucketCount>256</BucketCount>
+        <IncludeOutOfRange>1</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>4|4|3|3|2|11|3|12|2|10|13|4|7|9|12|15|17|21|32|37|52|60|86|109|167|213|321|536|901|1566|1847|1886|1947|2058|2234|2431|2510|2891|3222|3390|3378|3023|2723|2394|2001|1643|1440|1184|1043|1047|965|958|967|926|951|977|945|1008|982|925|884|821|829|868|784|747|711|654|586|568|540|546|520|555|533|522|514|523|515|477|504|468|448|456|461|469|418|484|466|441|444|494|471|419|467|450|458|498|560|610|671|704|743|793|858|925|1049|1074|1292|1254|1328|1228|1031|1059|1070|1049|1092|1210|1241|1388|1469|1592|1669|1675|1767|1727|1814|1776|1724|1692|1678|1563|1641|1387|1493|1393|1296|1318|1348|1415|1372|1487|1490|1549|1586|1618|1606|1535|1556|1527|1533|1463|1475|1400|1330|1201|1128|1057|946|938|842|840|843|869|828|826|778|853|819|761|791|773|821|864|780|792|779|815|836|827|778|732|743|784|792|845|974|965|1081|1066|1205|1162|1268|1298|1460|1461|1424|1585|1498|1508|1475|1358|1351|1326|1240|1274|1226|1270|1300|1368|1343|1339|1420|1436|1436|1509|1572|1592|1503|1439|1254|1101|994|863|812|647|607|575|501|492|473|506|511|583|763|1123|2331|7545|10926|2668|1189|842|686|555|474|431|398|380|357|374|303|282|288|262|312|967</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JP2000</MDI>
+    </Metadata>
+    <Metadata>
+      <MDI key="SourceBandIndex">1</MDI>
+      <MDI key="STATISTICS_COUNT">270722.000000</MDI>
+      <MDI key="STATISTICS_COVARIANCES">5304.993969527149,4842.27263971918,4061.243773971981,3244.875401764385</MDI>
+      <MDI key="STATISTICS_EXCLUDEDVALUES"></MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">139.46653393518</MDI>
+      <MDI key="STATISTICS_MEDIAN">141.000000</MDI>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_SKIPFACTORX">1</MDI>
+      <MDI key="STATISTICS_SKIPFACTORY">1</MDI>
+      <MDI key="STATISTICS_STDDEV">69.586440056373</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="3">
+    <NoDataValue>2.56000000000000E+02</NoDataValue>
+    <Histograms>
+      <HistItem>
+        <HistMin>-0.5</HistMin>
+        <HistMax>255.5</HistMax>
+        <BucketCount>256</BucketCount>
+        <IncludeOutOfRange>1</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>0|0|0|0|0|0|0|0|0|0|0|0|1|0|1|1|1|0|1|1|3|0|2|2|1|9|12|9|16|29|41|58|130|219|465|772|1249|1444|1707|2251|3070|3673|3930|3826|3807|3737|3293|2853|2441|2051|1870|1594|1463|1216|1139|1049|999|939|918|969|915|942|819|865|855|885|833|855|797|762|759|786|769|789|740|740|645|689|679|645|666|663|647|685|612|634|659|640|666|701|756|796|850|808|846|989|1046|1169|1356|1517|1650|1798|1877|2039|1962|1978|1887|1795|1858|1817|1861|1734|1864|1863|1884|1856|1849|1814|1849|1825|1995|2108|2004|2088|2189|2287|2215|2270|2208|2127|2043|1940|1773|1703|1560|1499|1312|1355|1225|1176|1139|1134|1045|1030|1042|973|878|900|889|874|852|830|747|796|782|877|843|918|915|1014|1007|1073|1175|1172|1203|1390|1316|1480|1496|1546|1559|1480|1541|1556|1574|1591|1598|1793|1715|1673|1690|1772|1801|1665|1583|1580|1646|1537|1367|1110|1059|927|755|729|678|664|661|713|792|839|930|1046|968|918|901|965|852|771|743|663|515|426|392|416|446|531|793|1030|1242|1277|1207|966|931|680|569|465|345|266|241|198|172|172|177|186|171|198|224|277|403|911|4568|7552|1643|548|266|150|128|103|68|63|38|40|32|27|19|35</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JP2000</MDI>
+    </Metadata>
+    <Metadata>
+      <MDI key="SourceBandIndex">2</MDI>
+      <MDI key="STATISTICS_COUNT">270722.000000</MDI>
+      <MDI key="STATISTICS_COVARIANCES">4347.425481081978,4061.243773971981,3674.726799096563,2545.684057776321</MDI>
+      <MDI key="STATISTICS_EXCLUDEDVALUES"></MDI>
+      <MDI key="STATISTICS_MAXIMUM">255</MDI>
+      <MDI key="STATISTICS_MEAN">129.02226638397</MDI>
+      <MDI key="STATISTICS_MEDIAN">125.000000</MDI>
+      <MDI key="STATISTICS_MINIMUM">12</MDI>
+      <MDI key="STATISTICS_SKIPFACTORX">1</MDI>
+      <MDI key="STATISTICS_SKIPFACTORY">1</MDI>
+      <MDI key="STATISTICS_STDDEV">60.619524899957</MDI>
+    </Metadata>
+  </PAMRasterBand>
+  <PAMRasterBand band="4">
+    <NoDataValue>2.56000000000000E+02</NoDataValue>
+    <Histograms>
+      <HistItem>
+        <HistMin>-0.5</HistMin>
+        <HistMax>246.5</HistMax>
+        <BucketCount>247</BucketCount>
+        <IncludeOutOfRange>1</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>19|19|16|34|37|114|236|574|1142|2026|2404|2555|2293|2515|2419|2821|2919|2810|2689|2537|2657|2594|2473|2298|2170|2187|2028|2043|2129|2058|2167|2220|2152|1842|1686|1721|1539|1408|1388|1552|1517|1458|1266|939|802|695|634|641|576|590|622|618|608|674|697|766|807|864|951|1011|1052|1263|1475|1725|1792|2069|2100|1874|1724|1459|1206|1080|975|867|786|742|725|693|639|674|641|689|701|760|755|765|738|730|748|685|665|724|708|712|744|839|817|822|818|945|1018|1045|1144|1325|1394|1426|1604|1702|1762|1881|2039|2100|2104|2193|2154|2147|2019|2097|2097|2109|2070|1984|1979|1997|1821|1685|1545|1567|1481|1520|1410|1528|1480|1483|1475|1478|1435|1380|1339|1395|1389|1342|1471|1509|1582|1720|1984|2201|2383|2368|2510|2625|2672|2725|2561|2530|2288|2173|2210|1961|1749|1510|1325|1238|1056|994|967|895|880|877|819|726|740|758|753|584|548|433|402|329|298|281|235|247|234|232|245|249|301|360|351|405|493|590|720|955|1333|1544|1655|1722|1384|1027|541|276|169|128|84|62|49|36|38|25|15|17|13|9|13|8|2|4|3|1|2|1|4|1|1|0|0|0|1|2|1|0|0|0|0|0|0|1|1|0|0|0|0|0|1</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata domain="IMAGE_STRUCTURE">
+      <MDI key="COMPRESSION">JP2000</MDI>
+    </Metadata>
+    <Metadata>
+      <MDI key="SourceBandIndex">3</MDI>
+      <MDI key="STATISTICS_COUNT">270722.000000</MDI>
+      <MDI key="STATISTICS_COVARIANCES">3655.913850908904,3244.875401764385,2545.684057776321,3221.114267612962</MDI>
+      <MDI key="STATISTICS_EXCLUDEDVALUES"></MDI>
+      <MDI key="STATISTICS_MAXIMUM">246</MDI>
+      <MDI key="STATISTICS_MEAN">95.852719764184</MDI>
+      <MDI key="STATISTICS_MEDIAN">106.000000</MDI>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_SKIPFACTORX">1</MDI>
+      <MDI key="STATISTICS_SKIPFACTORY">1</MDI>
+      <MDI key="STATISTICS_STDDEV">56.754861180457</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
