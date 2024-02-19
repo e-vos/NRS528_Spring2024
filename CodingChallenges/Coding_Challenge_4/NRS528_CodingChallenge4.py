@@ -5,13 +5,6 @@
 #
 #	This file contains my answers to Coding Challenge 4.
 
-'''
-NOTE: Lines 9-39 generate a shapefile for you to use. I could've included a shapefile, but I learned
-      a lot by creating one with arcpy. The shapefile is stored in the directory you are running this
-      Python file from. If this isn't what you wanted from the assignment let me know and I can do it
-      in a different way.
-'''
-
 import os
 import arcpy
 
@@ -38,11 +31,9 @@ fc_points = [
     [-71.281009, 41.641571]
 ]
 
-for i in fc_points:	            # I didn't know if this was required or not. It seems like arcpy
-    for j in range(len(i)):     # automatically converts coordinate values to floats,as it did in
+for i in fc_points:	        # I didn't know if this was required or not. It seems like arcpy
+    for j in range(len(i)):     # automatically converts coordinate values to floats, as it did in
         i[j] = float(i[j])      # my initial testing, but I've included this loop anyway.
-        
-# This is what I will showcase: the InsertCursor class of the Data Access module (arcpy.da)
 
 with arcpy.da.InsertCursor(new_shape_file, ['SHAPE@XY']) as cursor:     # Making it easier to read...
 
@@ -54,9 +45,19 @@ with arcpy.da.InsertCursor(new_shape_file, ['SHAPE@XY']) as cursor:     # Making
 InsertCursor is a very useful Data Access class, allowing for the addition of new rows to
 tables. 
 
-SHAPE@XY is a tuple. You said at the beginning of the course that we would not useful tuples,
+SHAPE@XY is a tuple. You said at the beginning of the course that we would not use tuples,
 but by their nature they seem essential to vector data like in this example. Coordinates have
 a fixed number of values. In this case, just X and Y. InsertCursor allows for XYZ as well.
 
 By storing coordinates in tuples, their order and values are immutable. 
 '''
+
+outFeatureClass = "thiessen_polys.shp"
+out_shp = arcpy.CreateFeatureclass_management(your_path, outFeatureClass, geom_type, spatial_reference=4326)	# Same as new_shape_file
+outFields = "ALL"
+
+arcpy.analysis.CreateThiessenPolygons(shp_name, out_shp, outFields)	# Use Create Thiessen Polygons on points to generate
+									# Voronoy cells corresponding to fc_points. From what
+									# I learned about them, this little example has no
+									# meaning. It just looks cool. I won't pretend to
+									# understand how they're calculated mathematically.
