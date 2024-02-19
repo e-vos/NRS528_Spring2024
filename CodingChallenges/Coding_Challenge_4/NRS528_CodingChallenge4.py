@@ -53,7 +53,7 @@ By storing coordinates in tuples, their order and values are immutable.
 '''
 
 outFeatureClass = "thiessen_polys.shp"
-out_shp = arcpy.CreateFeatureclass_management(your_path, outFeatureClass, geom_type, spatial_reference=4326)	# Same as new_shape_file
+out_shp = arcpy.CreateFeatureclass_management(your_path, outFeatureClass, "POLYGON", spatial_reference=4326)	# Again
 outFields = "ALL"
 
 arcpy.analysis.CreateThiessenPolygons(shp_name, out_shp, outFields)	# Use Create Thiessen Polygons on points to generate
