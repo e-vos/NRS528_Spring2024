@@ -22,3 +22,4 @@ difference_list = [i for i in list_a + list_b if i not in list_a or i not in lis
 											
 print(common_list)
 print(difference_list)
+

@@ -22,5 +22,5 @@ for i in init_list:
 selective_list_oneline = list(filter(lambda x: x < 5, init_list))	# Store values from init_list < 5 into selective_list;
                                                             # This is an alternative I came up with to a "for" loop.
 								
-print("Results of for loop method: " + selective_list)
-print("Results of one-line method: " + selective_list_oneline)
+print("Results of for loop method: " + str(selective_list))
+print("Results of one-line method: " + str(selective_list_oneline))

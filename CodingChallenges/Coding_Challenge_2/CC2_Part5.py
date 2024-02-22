@@ -28,4 +28,4 @@ user_word = list(input("Enter any word: ").lower())	# No need to use split() her
 
 word_score = sum(letter_scores[i] for i in user_word)	# This was difficult until I learned of the sum() method.
 
-print("Scrabble score: " + word_score)
+print("Scrabble score: " + str(word_score))
