@@ -78,9 +78,9 @@ with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChal
 	max_ppm = srt_ppm_values[-1]			# and last item = maximum.
 	avg_ppm = summed_values/count_values
 
-# print(min_ppm)
-# print(max_ppm)
-# print(avg_ppm)
+print("Minimum ppm value = " + str(min_ppm))
+print("Maximum ppm value = " + str(max_ppm))
+print("Average ppm value = " + str(avg_ppm))
 
 # Seasonal average in Spring, Summer, Fall, and Winter
 
@@ -113,14 +113,14 @@ for month in all_months:
 		monthly_avg = float(summed_values/count_values)		# " "
 		monthly_dict[month] = monthly_avg
 
-# print(monthly_dict)
+print("Contents of monthly dictionary: " + str(monthly_dict))
 
 for season, mm in seasons.items():					# Using the items() method here to get seasons dictionary
 									# items.
 	season_values = [monthly_dict[month] for mm in months]		# Extract values based on the month key in monthly_dict
 	seasonal_avgs[season] = sum(season_values)/len(season_values)	# Calculate seasonal averages and associate with season keys
 
-# print(seasonal_avgs)
+print("Seasonal averages = " + str(seasonal_avgs))
 
 # Calculate the anomaly for each value in the dataset relative to the mean for the entire time series.
 
@@ -137,3 +137,5 @@ with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChal
 
 		anomaly = float(row[1]) - avg_ppm	# Calculate anomaly value for the current ppm value based on avg_ppm (Task 2)
 		anomalies[position] = anomaly		# Store the position as key and anomaly as its value in the dictionary
+        
+print("Anomalies = " + str(anomalies))
