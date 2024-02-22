@@ -54,7 +54,7 @@ for year in years_set:
 				annuals_dict[year] = annual_avg				# Associate the average with the year, in the
 											# dictionary (e.g. 1959 | 300).
 
-# print(annuals_dict)
+print("Contents of annuals dictionary = " + str(annuals_dict))
 
 # Find the minimum, maximum, and average values for the entire dataset
 

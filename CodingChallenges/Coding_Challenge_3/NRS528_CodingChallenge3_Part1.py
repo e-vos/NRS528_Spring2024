@@ -36,7 +36,7 @@ def count_subs(i):					# Here's where things get tricky. I want to delete the di
 sorted_dir_list = sorted(dir_list, key = count_subs, reverse = True)	# So, I count how many \\ exist in each dir_list item, order them
 									# based on that value, then reverse the order.
 
-# print(sorted_dir_list)
+print("Sorted directories = " + str(sorted_dir_list))
 
 for i in sorted_dir_list:									# Now it's time to burn the bridges.
     burnt_bridges = os.path.join(file_path, i)							# I iterate through sorted_dir_list in the same way that I did in the first for loop.
