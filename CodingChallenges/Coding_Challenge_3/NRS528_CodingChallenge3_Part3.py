@@ -17,7 +17,7 @@ ppm_values = []		# For the second task
 
 # Find unique YYYY values, to iterate through the ppm values
 
-with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChallenges\Coding_Challenge_3\co2-ppm-daily.csv") as co2:
+with open(r"co2-ppm-daily.csv") as co2:
 
 	next(co2)
 
@@ -34,7 +34,7 @@ years_set = sorted(list(set(years)))		# Turn it into a set to get unique years, 
 
 for year in years_set:
 
-	with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChallenges\Coding_Challenge_3\co2-ppm-daily.csv") as co2:
+	with open(r"co2-ppm-daily.csv") as co2:
 
 		summed_values = float(0)	# Need float here because the ppm values are floats
 		count_values = 0		# Count can be an integer
@@ -58,7 +58,7 @@ print("Contents of annuals dictionary = " + str(annuals_dict))
 
 # Find the minimum, maximum, and average values for the entire dataset
 
-with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChallenges\Coding_Challenge_3\co2-ppm-daily.csv") as co2:
+with open(r"co2-ppm-daily.csv") as co2:
 
 	summed_values = float(0)	# Same as in Task 1
 	count_values = 0
@@ -94,7 +94,7 @@ seasonal_avgs = {}	# Storage for seasonal averages
 
 for month in all_months:
 
-	with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChallenges\Coding_Challenge_3\co2-ppm-daily.csv") as co2:
+	with open(r"co2-ppm-daily.csv") as co2:
 
 		summed_values = float(0)
 		count_values = 0
@@ -126,7 +126,7 @@ print("Seasonal averages = " + str(seasonal_avgs))
 
 anomalies = {}	# Dictionary to store anomaly values
 
-with open(r"C:\Users\Elliot\Documents\Github\NRS528\NRS528_Spring2024\CodingChallenges\Coding_Challenge_3\co2-ppm-daily.csv") as co2:
+with open(r"co2-ppm-daily.csv") as co2:
 
 	next(co2)
 
