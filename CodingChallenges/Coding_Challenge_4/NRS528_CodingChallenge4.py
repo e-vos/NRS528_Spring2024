@@ -5,8 +5,8 @@
 #
 #	This file contains my answers to Coding Challenge 4.
 
-from arcpy import env
-from arcpy.sa import *
+# from arcpy import env
+# from arcpy.sa import *
 import os
 import arcpy
 
